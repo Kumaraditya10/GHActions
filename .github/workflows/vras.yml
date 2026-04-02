@@ -18,5 +18,6 @@ jobs:
                 echo "Configuration Variable | Varsion of App is ${{vars.VERSION}}"
                 echo "Secret Variable | API Key is ${{secrets.KEY}}"
                 ${{secrets.KEY_VISIBLE}}
+                echo "Context Variable | Repository name is ${{github.repository}}"
               env:
                 expire: 10days
